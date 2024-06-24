@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css");
-
-
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 :root {
@@ -13,8 +12,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
 }
 
 // Variables
@@ -22,9 +19,26 @@ $primary-color: #104cba;
 $primary-lite: #1d2c38;
 $dark-001: #454545;
 $gray: #e7edf8;
-
+$gray-lite: #e5eef6;
 a {
   text-decoration: none !important;
+  color: unset;
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fw-800 {
+  font-weight: 800;
 }
 
 .fs-7 {
@@ -32,4 +46,24 @@ a {
 }
 .fs-8 {
   font-size: 12px;
+}
+
+.header-top {
+  // background-color: red !important;
+}
+.bg-primary{background: $primary-color;}
+.bg-gray-lite {
+  background: $gray-lite;
+}
+
+.text-primary{color: $primary-color !important;}
+.text-primary-lite{color: $primary-lite;}
+
+
+.nav{
+  &-link{
+    font-size: 1.125rem !important;
+    font-weight: 700 !important;
+    color: black !important;
+  }
 }
