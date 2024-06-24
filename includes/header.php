@@ -76,7 +76,7 @@
                         
                     </ul>
 
-                    <a href="" class="btn btn-primary btn-lg fw-700 fs-6 py-3">Meet With Us</a>
+                    <a href="" class="btn btn-primary btn-lg fw-700 px-4">Meet With Us</a>
                 </div>
             </div>
         </nav>

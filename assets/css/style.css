@@ -30,11 +30,11 @@ a:hover {
 }
 
 .fw-700 {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 
 .fw-800 {
-  font-weight: 800;
+  font-weight: 800 !important;
 }
 
 .fs-7 {
@@ -65,4 +65,14 @@ a:hover {
   font-size: 1.125rem !important;
   font-weight: 700 !important;
   color: black !important;
+}
+
+.btn {
+  border-radius: 0.4rem !important;
+}
+.btn-primary:hover {
+  background-color: #1d2c38 !important;
+}
+.btn-lg {
+  font-size: 1.12rem !important;
 }/*# sourceMappingURL=style.css.map */
