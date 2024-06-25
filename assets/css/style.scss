@@ -5,80 +5,166 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 :root {
-font-size: 16px;
-box-sizing: border-box;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 body {
-margin: 0;
-padding: 0;
-font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
 }
 
 // Variables
 $primary-color: #104cba;
 $primary-lite: #1d2c38;
+$secondry-color: #0e1e2a;
 $dark-001: #454545;
 $gray: #e7edf8;
 $gray-lite: #e5eef6;
+$gray-200: #bdc2cb;
 a {
-text-decoration: none !important;
-color: unset;
-&:hover {
+  text-decoration: none !important;
+  color: unset;
+  &:hover {
     color: $primary-color;
-}
+  }
 }
 
 .fw-500 {
-font-weight: 500;
+  font-weight: 500;
 }
 .fw-600 {
-font-weight: 600;
+  font-weight: 600;
 }
 .fw-700 {
-font-weight: 700 !important;
+  font-weight: 700 !important;
 }
 .fw-800 {
-font-weight: 800 !important;
+  font-weight: 800 !important;
+}
+
+.fw-900 {
+  font-weight: 900 !important;
 }
 
 .fs-7 {
-font-size: 14px;
+  font-size: 14px;
 }
 .fs-8 {
-font-size: 12px;
+  font-size: 12px;
 }
 
 .header-top {
-// background-color: red !important;
+  // background-color: red !important;
 }
-.bg-primary{background: $primary-color;}
+.bg-primary {
+  background: $primary-color;
+}
 .bg-gray-lite {
-background: $gray-lite;
+  background: $gray-lite;
+}
+.bg-secondary-lite {
+  background: $secondry-color !important;
 }
 
-.text-primary{color: $primary-color !important;}
-.text-primary-lite{color: $primary-lite;}
-
-
-.nav{
-    &-link{
-        font-size: 1.125rem !important;
-        font-weight: 700 !important;
-        color: black !important;
-    }
+.text-primary {
+  color: $primary-color !important;
+}
+.text-primary-lite {
+  color: $primary-lite;
 }
 
+.text-gray-200 {
+  color: $gray-200;
+}
+.navbar {
+  .nav-link {
+    font-size: 1.125rem !important;
+    font-weight: 700 !important;
+    color: black !important;
+  }
+}
 
 // button
-.btn{
-border-radius: .4rem !important;
-    &-primary{
-        &:hover{
-        background-color: $primary-lite  !important;
-        }
+.btn {
+  border-radius: 0.4rem !important;
+  &-primary {
+    &:hover {
+      background-color: $primary-lite !important;
     }
+  }
 
-    &-lg{
-        font-size: 1.12rem !important;
+  &-lg {
+    font-size: 1.12rem !important;
+  }
+}
+
+//
+
+.hero-image {
+  background: url("https://softwavehub.com/wp-content/uploads/2021/04/banner-home-3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 700px;
+  position: relative;
+  h1 {
+    font-size: 4.5rem;
+  }
+  &:after {
+  }
+  &-container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    &:after {
+      content: "";
+      width: 100%;
+      height: 200%;
+      position: absolute;
+      left: 0;
+      top: -50%;
+      background: rgb(16 76 186 / 24%);
+      z-index: -1;
     }
+  }
+}
+
+.what-we-do {
+  nav {
+    .nav {
+      &-link {
+        font-weight: 700;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        border-bottom: 2px solid transparent;
+        &:hover {
+          border-bottom: 2px solid $primary-color;
+        }
+        .active{
+            background-color: transparent !important;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #091d3e;
+  background-image: url(https://softwavehub.com/wp-content/uploads/2021/04/ftbg2-1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+
+  display: grid;
+  place-content: center;
 }

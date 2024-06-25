@@ -37,6 +37,10 @@ a:hover {
   font-weight: 800 !important;
 }
 
+.fw-900 {
+  font-weight: 900 !important;
+}
+
 .fs-7 {
   font-size: 14px;
 }
@@ -53,6 +57,10 @@ a:hover {
   background: #e5eef6;
 }
 
+.bg-secondary-lite {
+  background: #0e1e2a !important;
+}
+
 .text-primary {
   color: #104cba !important;
 }
@@ -61,7 +69,11 @@ a:hover {
   color: #1d2c38;
 }
 
-.nav-link {
+.text-gray-200 {
+  color: #bdc2cb;
+}
+
+.navbar .nav-link {
   font-size: 1.125rem !important;
   font-weight: 700 !important;
   color: black !important;
@@ -75,4 +87,63 @@ a:hover {
 }
 .btn-lg {
   font-size: 1.12rem !important;
+}
+
+.hero-image {
+  background: url("https://softwavehub.com/wp-content/uploads/2021/04/banner-home-3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 700px;
+  position: relative;
+}
+.hero-image h1 {
+  font-size: 4.5rem;
+}
+.hero-image-container {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.hero-image-container:after {
+  content: "";
+  width: 100%;
+  height: 200%;
+  position: absolute;
+  left: 0;
+  top: -50%;
+  background: rgba(16, 76, 186, 0.24);
+  z-index: -1;
+}
+
+.what-we-do nav .nav-link {
+  font-weight: 700;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 2px solid transparent;
+}
+.what-we-do nav .nav-link:hover {
+  border-bottom: 2px solid #104cba;
+}
+.what-we-do nav .nav-link .active {
+  background-color: transparent !important;
+}
+
+footer {
+  background-color: #091d3e;
+  background-image: url(https://softwavehub.com/wp-content/uploads/2021/04/ftbg2-1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
 }/*# sourceMappingURL=style.css.map */
